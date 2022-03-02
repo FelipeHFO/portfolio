@@ -1,0 +1,31 @@
+.container {
+    width: 500px;
+    color: black;
+    background-color: white;
+    border: 1px solid rgb(200, 200, 200);
+    padding: 20px;
+}
+
+.image_container {
+    padding: 20px;
+}
+
+.title_container {
+    height: 105px;
+    min-height: 105px;
+    max-height: 105px;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.description {
+    font-weight: 100;
+}
+
+.tech_container {
+    height: 236px;
+    min-height: 236px;
+    max-height: 236px;
+}

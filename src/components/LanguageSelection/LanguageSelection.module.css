@@ -1,0 +1,51 @@
+.change_language_button {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    width: 130px;
+    background-color: rgb(230, 230, 230);
+    border: 1px solid black;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.options {
+    position: absolute;
+    top: 35px;
+    width: 130px;
+    height: auto;
+    background-color: rgb(230, 230, 230);
+    border: 1px solid black;
+    list-style: none;
+    padding: 0;
+
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-iteration-count: initial;
+}
+
+.options li {
+    height: 20px;
+    margin: 2px auto;
+}
+
+.options a {
+    height: 20px;
+    line-height: 20px;
+    display: block;
+}
+
+.options a:hover {
+    background-color: rgb(200, 200, 200);
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
