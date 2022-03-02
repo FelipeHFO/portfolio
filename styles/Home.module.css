@@ -46,7 +46,7 @@
     padding: 100px 30%;
 }
 
-.intro_section h1 {
+.intro_section h1, .social_section h1 {
     font-size: 2rem;
 }
 
@@ -57,6 +57,11 @@
     justify-content: space-around;
     width: 75%;
     margin: 0 auto;
+}
+
+.social_networks_container {
+    width: 60%;
+    margin: 50px auto;
 }
 
 .footer {

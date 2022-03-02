@@ -5,6 +5,7 @@ import LanguageSelection from '../../src/components/LanguageSelection/LanguageSe
 import LogoButton from '../../src/components/LogoButton/LogoButton';
 import Image from 'next/image';
 import SkillsCard from '../../src/components/SkillsCard/SkillsCard';
+import SocialNetworksCard from '../../src/components/SocialNetworksCard/SocialNetworksCard';
 
 const skills = [
   {
@@ -24,6 +25,33 @@ const skills = [
     devTools: 'Git, Insomnia, Workbench, VSCode, Terminal'
   }
 ];
+
+const socialNetworks = [
+  {
+    id: 3,
+    link: 'https://github.com/FelipeHFO',
+    image:'/github.png',
+    alt: 'Logo do Github'
+  },
+  {
+    id: 4,
+    link: 'https://www.instagram.com/felipehfo/?hl=pt-br',
+    image:'/instagram.png',
+    alt: 'Logo do Instagram'
+  },
+  {
+    id: 5,
+    link: 'https://www.linkedin.com/in/felipehf-oliveira/',
+    image:'/linkedin.png',
+    alt: 'Logo do Linkedin'
+  },
+  {
+    id: 6,
+    link: 'mailto:felipe.henrique.f.o@gmail.com',
+    image:'/gmail.png',
+    alt: 'Logo do Gmail'
+  }
+]
 
 const Home: NextPage = (language) => {
   return (
@@ -47,6 +75,7 @@ const Home: NextPage = (language) => {
             width="350"
             height="350"
             src="/foto-perfil.jpg"
+            alt="Foto de Perfil"
             className={styles.person_photo}
           />
         </div>
@@ -55,6 +84,7 @@ const Home: NextPage = (language) => {
             width="500"
             height="200"
             src="/banner-featured.png"
+            alt="Desenho de uma mesa de escritório e ferramentas de trabalho como imagem de fundo"
           />
         </div>
         <section className={styles.intro_section}>
@@ -84,7 +114,17 @@ const Home: NextPage = (language) => {
         </section>
 
         <section className={styles.social_section}>
-            <h1>Minhas redes sociais</h1>
+            <h1>Redes Sociais</h1>
+            <div className={styles.social_networks_container}>
+              {socialNetworks.map((socialNetwork) =>
+                <SocialNetworksCard
+                  key={socialNetwork.id}
+                  link={socialNetwork.link}
+                  image={socialNetwork.image}
+                  alt={socialNetwork.alt}
+                />
+              )}
+            </div>
         </section>
       </main>
 

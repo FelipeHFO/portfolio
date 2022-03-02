@@ -36,12 +36,16 @@ const SkillsCard = (
 
 			<div className={styles.tech_container}>
 				<h1 className={styles.title}>Tecnologias</h1>
-				{technologies.split(',').map((item) => <p className={styles.description}>{item}</p>)}
+				{technologies.split(',').map((item, index) =>
+					<p key={technologies.length + index} className={styles.description}>{item}</p>)
+				}
 			</div>
 
 			<div className={styles.dev_container}>
 				<h1 className={styles.title}>Ferramentas de Desenvolvimento</h1>
-				{devTools.split(',').map((item) => <p className={styles.description}>{item}</p>)}
+				{devTools.split(',').map((item, index) =>
+					<p key={devTools.length + index} className={styles.description}>{item}</p>)
+				}
 			</div>
 		</div>
 	)
