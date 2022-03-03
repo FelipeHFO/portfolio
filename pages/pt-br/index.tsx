@@ -6,6 +6,7 @@ import LogoButton from '../../src/components/LogoButton/LogoButton';
 import Image from 'next/image';
 import SkillsCard from '../../src/components/SkillsCard/SkillsCard';
 import SocialNetworksCard from '../../src/components/SocialNetworksCard/SocialNetworksCard';
+import Link from 'next/link';
 
 const skills = [
   {
@@ -126,9 +127,22 @@ const Home: NextPage = (language) => {
               )}
             </div>
         </section>
+
+        <section className={styles.contact_section}>
+            <div className={styles.contact_container}>
+              <h1>Quer iniciar um projeto?</h1>
+              <p>Qualquer ideia é bem vinda e não importa seu nível na programação!</p>
+              <Link href="https://api.whatsapp.com/send?phone=5535984249391" passHref>
+                <a href="/" target="_blank" className={styles.contact_button}>
+                  Bora conversar!
+                </a>
+              </Link>
+            </div>
+        </section>
       </main>
 
       <footer className={styles.footer}>
+        <span>© 2022 Felipe Henrique | Todos os direitos reservados.</span>
       </footer>
     </div>
   )

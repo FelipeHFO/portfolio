@@ -12,8 +12,6 @@
 
 .title_container {
     height: 105px;
-    min-height: 105px;
-    max-height: 105px;
 }
 
 .title {
@@ -26,6 +24,16 @@
 
 .tech_container {
     height: 260px;
-    min-height: 260px;
-    max-height: 260px;
+}
+
+@media (min-width: 320px) AND (max-width: 480px) {
+    .container {
+        width: 100%;
+        height: auto;
+        margin: 20px auto;
+    }
+
+    .title_container {
+        height: 150px;
+    }
 }

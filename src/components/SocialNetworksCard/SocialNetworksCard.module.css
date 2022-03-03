@@ -1,3 +1,9 @@
 .btn_social_network {
   margin: 50px;
 }
+
+@media (min-width: 320px) AND (max-width: 480px) {
+  .btn_social_network {
+    display: block;
+  }
+}
