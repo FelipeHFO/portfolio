@@ -91,14 +91,16 @@ const Home: NextPage = (language) => {
         <section className={styles.intro_section}>
           <h1>Oi, meu nome é Felipe. Prazer em te conhecer!</h1>
           <p>
-            Desde pequeno interessado em computador e jogos, decidi
-            buscar algo que me aproximasse dessa area. Em 2015, iniciei
-            o curso de Ciência da Computação que ainda não conclui, mas
-            que serviu em muitas coisas importantes e uma delas foi a minha
-            cabeça em relação ao que poderia fazer.
-            Foi em uma matéria que me apaixonei por Javascript e tudo que rodeava
-            essa linguagem de programação. Há dois anos estudo e trabalho com essa
-            linguagem e pretendo me especializar nela.
+            Desde pequeno eu sou interessado em computador e jogos,
+            então decidi buscar algo que me aproximasse dessa área.
+            Em 2015, iniciei o curso de Ciência da Computação que
+            ainda não conclui, mas que serviu em muitas coisas
+            importantes e uma delas foi abrir minha cabeça em
+            relação ao que poderia fazer. Foi em uma matéria da
+            faculdade que me apaixonei por Javascript e tudo que
+            rodeava essa linguagem de programação. Há dois anos
+            estudo e trabalho com essa linguagem e pretendo me
+            especializar nela.
           </p>
         </section>
         <section className={styles.skills_section}>
@@ -110,6 +112,7 @@ const Home: NextPage = (language) => {
               description={skill.description}
               technologies={skill.technologies}
               devTools={skill.devTools}
+              language="PT-BR"
             />
           )}
         </section>
