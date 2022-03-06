@@ -4,7 +4,7 @@ import styles from './LogoButton.module.css';
 
 const LogoButton = () => (
     <Link href="/" passHref>
-      <a href="/" className={styles.logo}>
+      <a className={styles.logo}>
         @FelipeHFO
       </a>
     </Link>

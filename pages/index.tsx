@@ -1,6 +1,5 @@
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
-import { UrlObject } from "url";
 
 const Index = () => {
   const [language, setLanguage] = useState<string>('');
@@ -8,17 +7,18 @@ const Index = () => {
 
   useEffect(() => {
     const localLanguage = navigator.language;
-    setLanguage(localLanguage);
-    redirect(localLanguage);
-  }, []);
 
-  const redirect = async (url: string) => {
-    if(url === 'pt-BR'){
-      router.push('pt-br');
-    } else {
-      router.push('en');
+    const pageRedirect = async (url: string) => {
+      if(url === 'pt-BR'){
+        router.push('pt-br');
+      } else {
+        router.push('en');
+      }
     }
-  }
+
+    setLanguage(localLanguage);
+    pageRedirect(localLanguage);
+  }, [language, router]);
 
   return (
     <div>

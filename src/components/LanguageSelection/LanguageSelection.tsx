@@ -35,12 +35,12 @@ const LanguageSelection = ({ language }: LanguageSelectionProps) => {
           <ul className={styles.options}>
             <li>
               <Link href="/pt-br">
-                <a href="/">PT-BR</a>
+                <a>PT-BR</a>
               </Link>
             </li>
             <li>
               <Link href="/en">
-                <a href="/">EN</a>
+                <a>EN</a>
               </Link>
             </li>
           </ul>
