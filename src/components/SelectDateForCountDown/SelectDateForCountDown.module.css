@@ -21,3 +21,16 @@
   font-weight: bold;
   margin: 30px auto;
 }
+
+@media (min-width: 320px) AND (max-width: 480px) {
+  .textInput{
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+  }
+
+  .dateInput {
+    display: block;
+    margin: 10px auto;
+  }
+}
