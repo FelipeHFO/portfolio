@@ -60,11 +60,23 @@
     margin: 50px auto;
 }
 
+.project_session{
+    margin: 150px;
+}
+
+.project_title{
+    color: rgb(138, 43, 226);
+}
+
+.project_session h1 {
+    font-size: 2rem;
+}
+
 .contact_section {
     display: flex;
     align-items: center;
     height: 400px;
-    background-color: blueviolet;
+    background-color: #8a2be2;
     margin: 150px auto;
 }
 

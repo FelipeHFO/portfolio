@@ -1,0 +1,23 @@
+.textInput {
+  min-width: 40%;
+  height: 40px;
+  font-size: 1.1rem;
+  margin-right: 25px;
+  padding: 2px;
+  outline: none;
+}
+
+.dateInput {
+  height: 40px;
+  font-size: 1.1rem;
+  margin-left: 25px;
+}
+
+.button {
+  display: block;
+  width: 250px;
+  height: 40px;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 30px auto;
+}
