@@ -1,13 +1,12 @@
 import Head from "next/head";
+import Link from "next/link";
+import Image from "next/image";
 import type { NextPage } from "next";
 import styles from "../../styles/Home.module.css";
-import LanguageSelection from "../../src/components/LanguageSelection/LanguageSelection";
 import LogoButton from "../../src/components/LogoButton/LogoButton";
-import Image from "next/image";
 import SkillsCard from "../../src/components/SkillsCard/SkillsCard";
+import LanguageSelection from "../../src/components/LanguageSelection/LanguageSelection";
 import SocialNetworksCard from "../../src/components/SocialNetworksCard/SocialNetworksCard";
-import Link from "next/link";
-import CountDownTimer from "../../src/components/CountDown/CountDownTimer";
 
 const skills = [
   {
