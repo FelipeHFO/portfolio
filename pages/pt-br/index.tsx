@@ -135,14 +135,6 @@ const Home: NextPage = (language) => {
           </div>
         </section>
 
-        <section className={styles.project_session}>
-          <div className={styles.project_container}>
-            <h1>Alguns Projetos de Estudo - Logo terá mais projetos...</h1>
-            <h1 className={styles.project_title}>Countdown</h1>
-            <CountDownTimer />
-          </div>
-        </section>
-
         <section className={styles.contact_section}>
           <div className={styles.contact_container}>
             <h1>Quer iniciar um projeto?</h1>
